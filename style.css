@@ -1,0 +1,323 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: 'Segoe UI', sans-serif;
+  background-color: none;
+  color: white;
+}
+
+.navbar {
+  display: flex;
+  align-items: center;
+  padding: 20px 40px;
+  background: linear-gradient(to bottom, #0b0924 60%, #2f2a61 100%);
+}
+
+
+.logo-text {
+  font-size: 28px;
+  font-weight: 600;
+  color: white;
+  font-family: 'Segoe UI', sans-serif;
+}
+
+.navbar-left {
+  margin-right: auto;
+  flex: 1;
+}
+
+.navbar-center {
+  flex: 1;
+  list-style: none;
+  display: flex;
+  gap: 30px;
+  margin-left: 250px;
+  justify-content: center;
+}
+
+.navbar-center li a {
+  color: white;
+  text-decoration: none;
+  font-size: 18px;
+  transition: color: 0.3s;
+}
+
+.navbar-center li a:hover {
+  color: #00ffcc;
+}
+
+.navbar-right {
+  display: flex;
+  align-items: center;
+  justify-content: flex-end;
+  gap: 15px;
+}
+
+.btn {
+  padding: 12px 24px;
+  font-size: 18px;
+  border-radius: 25px;
+  text-decoration: none;
+  display: inline-block;
+  font-weight: 500;
+  cursor: pointer;
+  transition: all 0.3s ease;
+}
+
+.download-btn {
+  background-color: #8fe136;
+  color: #0c0f1f;
+}
+
+.download-btn:hover {
+  background-color: #79c32f;
+}
+
+.login-btn {
+  background-color: transparent;
+  color: white;
+  border: 1px solid #888;
+}
+
+.login-btn:hover {
+  background-color: #1c1f2f;
+}
+
+.flag-icon {
+  width: 25px;
+  height: auto;
+}
+
+
+
+.hero {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  justify-content: space-between;
+  padding: 80px 10%;
+  background: linear-gradient(to bottom, #2f2a61 0%, #0b0924 30%, #2f2a61 100%);
+  color: white;
+}
+
+.hero-content {
+  flex: 1 1 400px;
+  max-width: 500px;
+}
+
+.hero-content h1 {
+  font-size: 2.5rem;
+  margin-bottom: 20px;
+}
+
+.hero-content p {
+  font-size: 1.1rem;
+  line-height: 1.6;
+  margin-bottom: 30px;
+}
+
+.hero-btn {
+  background-color: #8cd637;
+  color: #444;
+  padding: 14px 28px;
+  font-size: 1rem;
+  border-radius: 30px;
+  text-decoration: none;
+  transition: background 0.3s ease;
+  box-shadow: 0 4px 12px rgba(140, 214, 55, 0.4);
+}
+
+.hero-btn:hover {
+  background-color: #7abb31;
+}
+
+.hero-image {
+  flex: 1 1 400px;
+  text-align: center;
+}
+
+.hero-image img {
+  max-width: 100%;
+  height: auto;
+  object-fit: contain;
+  display: block;
+  margin-left: 50px;
+
+}
+
+.products {
+  padding: 80px 10%;
+
+  text-align: center;
+}
+
+.products h2 {
+  font-size: 2.5rem;
+  margin-bottom: 50px;
+  color: white;
+}
+
+.card-container {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 30px;
+  justify-content: center;
+}
+
+.card {
+  background: white;
+  padding: 30px 20px;
+  border-radius: 20px;
+
+  transition: transform 0.3s ease;
+  flex: 1 1 250px;
+  max-width: 300px;
+}
+
+.card:hover {
+  transform: scale(1.05);
+}
+
+.card img {
+  width: 80px;
+  height: 80px;
+  margin-bottom: 20px;
+}
+
+.card h3 {
+  font-size: 1.4rem;
+  margin-bottom: 10px;
+  color: #444;
+}
+
+.card p {
+  font-size: 1rem;
+  color: #666;
+  line-height: 1.5;
+}
+
+.transition-section {
+  background: linear-gradient(to bottom, #2f2a61 0%, #0b0924 30%, #2f2a61 100%);
+  padding-top: 1px;
+}
+
+.transition-section .products {
+  background: transparent;
+}
+
+.pricing-section {
+  padding: 60px 20px;
+  text-align: center;
+  background: linear-gradient(to bottom, #2f2a61 0%, #0b0924 30%, #ffffff 100%);
+}
+
+.pricing-section h2 {
+  font-size: 2rem;
+  margin-bottom: 40px;
+}
+
+.pricing-cards {
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+
+}
+
+
+.card {
+
+  background: white;
+  border-radius: 12px;
+  box-shadow: 0 0 15px rgba(0,0,0,0.08);
+  padding: 30px;
+  width: 300px;
+  position: relative;
+}
+
+.card h3 {
+  font-size: 1.3rem;
+  margin-bottom: 10px;
+  color: #2c3e50;
+}
+
+.subtext {
+  font-size: 0.9rem;
+  color: #555;
+  margin-bottom: 20px;
+}
+
+.price {
+  font-size: 2.5rem;
+  font-weight: bold;
+  color: #2c3e50;
+}
+
+.per-month {
+  font-size: 0.9rem;
+  color: #aaa;
+  margin-bottom: 20px;
+}
+
+.btn {
+  background-color: #7bdc28;
+  color: white;
+  border: none;
+  padding: 10px 24px;
+  font-size: 1rem;
+  border-radius: 25px;
+  cursor: pointer;
+  transition: background 0.3s;
+}
+
+.btn:hover {
+  background-color: #6bc11f;
+}
+
+.highlight {
+  background: linear-gradient(to bottom right, #00bfff, #2c82c9);
+  color: white;
+  transform: scale(1.05);
+  z-index: 1;
+  box-shadow: 0 8px 20px rgba(0, 0, 0, 0.15);
+}
+
+.highlight .price,
+.highlight .per-month,
+.highlight .subtext {
+  color: white;
+}
+
+.highlight .btn {
+  background-color: #7bdc28;
+}
+
+.highlight .btn:hover {
+  background-color: #6bc11f;
+}
+
+.highlight .tag {
+  margin-top: 15px;
+  font-size: 0.8rem;
+  text-transform: uppercase;
+  letter-spacing: 1px;
+  opacity: 0.8;
+}
+
+.best-price {
+  position: absolute;
+  top: 15px;
+  right: 15px;
+  background-color: #dfe9ff;
+  color: #0b5ed7;
+  font-size: 0.75rem;
+  padding: 5px 10px;
+  border-radius: 20px;
+}
+
+.faded {
+  color: #ccc;
+}

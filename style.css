@@ -409,3 +409,9 @@ body {
     margin-bottom: 20px;
   }
 }
+
+@media (max-width: 768px) {
+  .mobile-tab-bar {
+    display: flex;
+  }
+}

@@ -322,51 +322,68 @@ body {
   color: #ccc;
 }
 
+/* New: Mobile nav bar */
+.mobile-nav {
+  display: none;
+  background-color: #1c1b2e;
+  padding: 10px 20px;
+  justify-content: space-around;
+  border-top: 1px solid #333;
+}
+
+.mobile-nav a {
+  color: white;
+  text-decoration: none;
+  font-size: 16px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 4px;
+}
+
+.mobile-nav a i {
+  font-size: 20px;
+}
+
+/* Updated Media Query */
 @media (max-width: 768px) {
   .navbar {
-    flex-direction: column;
-    align-items: flex-start;
-    padding: 20px;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    flex-wrap: wrap;
+    padding: 15px 20px;
+  }
+
+  .navbar-left {
+    flex: 0 0 auto;
+    margin: 0;
   }
 
   .navbar-center {
-    flex-direction: column;
-    width: 100%;
-    margin: 10px 0 0 0;
-    gap: 10px;
-    align-items: flex-start;
+    display: none; 
   }
 
   .navbar-right {
-    width: 100%;
-    margin-top: 10px;
-    justify-content: flex-start;
+    display: flex;
+    flex: 0 0 auto;
+    gap: 8px;
+  }
+
+  .download-btn, .login-btn {
+    padding: 8px 14px;
+    font-size: 14px;
+  }
+
+  .flag-icon {
+    width: 20px;
+  }
+
+  .mobile-nav {
+    display: flex;
   }
 
   .hero {
-    flex-direction: column;
-    text-align: center;
-    padding: 40px 5%;
-  }
-
-  .hero-image {
-    margin-left: 0;
-    margin-top: 30px;
-  }
-
-  .card-container {
-    flex-direction: column;
-    align-items: center;
-  }
-
-  .pricing-cards {
-    flex-direction: column;
-    align-items: center;
-  }
-
-  .pricing-cards .card {
-    width: 100%;
-    max-width: 350px;
-    margin-bottom: 20px;
+    padding: 40px 20px;
   }
 }
